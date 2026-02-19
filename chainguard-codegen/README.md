@@ -20,7 +20,7 @@ This plugin includes:
 
 ## Requirements
 
-- **Docker**: Required to run the dfc MCP server container
+- **Docker** or similar: Required to run the dfc MCP server container
 - Internet access to pull `cgr.dev/chainguard/dfc-mcp`
 
 ## Installation
@@ -28,7 +28,7 @@ This plugin includes:
 Users can install this plugin by adding the Chainguard marketplace:
 
 ```bash
-/plugin marketplace add github.com/chainguard-demo/claude-plugins
+/plugin marketplace add https://github.com/chainguard-demo/claude-plugins
 /plugin install chainguard-codegen@chainguard-plugins
 ```
 

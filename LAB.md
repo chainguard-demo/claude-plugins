@@ -178,7 +178,7 @@ to Chainguard documentation and can convert Dockerfiles automatically.
 
 ```bash
 # Add the Chainguard plugin marketplace
-/plugin marketplace add github.com/chainguard-demo/claude-plugins
+/plugin marketplace add https://github.com/chainguard-demo/claude-plugins
 
 # Install both plugins
 /plugin install chainguard-docs@chainguard-plugins
