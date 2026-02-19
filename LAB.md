@@ -161,6 +161,11 @@ docker run --rm -i ghcr.io/chainguard-dev/ai-docs:latest serve-mcp
 # Ctrl+C to exit
 ```
 
+> **Apple Silicon (M1/M2/M3/M4):** The image is currently amd64-only. Add `--platform linux/amd64` to run it via Rosetta emulation:
+> ```bash
+> docker run --rm -i --platform linux/amd64 ghcr.io/chainguard-dev/ai-docs:latest serve-mcp
+> ```
+
 ---
 
 ## Part 2 — Claude Code Plugin Setup
