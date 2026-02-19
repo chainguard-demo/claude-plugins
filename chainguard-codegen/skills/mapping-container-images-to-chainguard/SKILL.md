@@ -33,7 +33,7 @@ cgr.dev/ORGANIZATION/image-name:tag
 - For enterprise customers, use the customer's Chainguard organization name
 - For free tier / public images, use `chainguard`
 
-Check `/tmp/chainguard-preferences.md` if it exists, or ask the user if the
+Check `~/.claude/chainguard-preferences.md` if it exists, or ask the user if the
 organization name is unknown.
 
 ## Tag Mapping Rules
@@ -120,7 +120,7 @@ dynamic runtime image.
 
 ### FIPS Variants
 
-If FIPS compliance is required (check `/tmp/chainguard-preferences.md`), append
+If FIPS compliance is required (check `~/.claude/chainguard-preferences.md`), append
 `-fips` to the image name:
 
 - `python` → `python-fips`

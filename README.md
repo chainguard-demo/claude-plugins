@@ -4,7 +4,7 @@ Official Chainguard plugins for Claude Code - bringing supply chain security and
 
 ## Available Plugins
 
-### 🔍 [chainguard-docs](./chainguard-docs)
+### [chainguard-docs](./chainguard-docs)
 
 Access Chainguard's complete documentation library through a Model Context Protocol (MCP) server.
 
@@ -21,7 +21,7 @@ Access Chainguard's complete documentation library through a Model Context Proto
 - Understanding supply chain security concepts
 - Looking up tool documentation
 
-### 🔧 [chainguard-codegen](./chainguard-codegen)
+### [chainguard-codegen](./chainguard-codegen)
 
 Generate secure code and configurations using Chainguard Images and tools.
 

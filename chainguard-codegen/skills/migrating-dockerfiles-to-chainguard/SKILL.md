@@ -31,7 +31,7 @@ else, you should clarify the following with the user:
    1. Should you try and build the image to validate the conversion worked?
    2. Should you try and run the image to validate the conversion worked?
 
-Store these answers under `/tmp/chainguard-preferences.md` and try and reuse
+Store these answers under `~/.claude/chainguard-preferences.md` and try and reuse
 this file across subsequent asks to migrate Dockerfiles.
 
 ## Backup the Dockerfile

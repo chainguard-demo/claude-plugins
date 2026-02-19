@@ -7,7 +7,7 @@ This document explains how both Chainguard Claude Code plugins publish their MCP
 Both plugins use **containerized MCP servers** published to GitHub Container Registry (ghcr.io):
 
 1. **chainguard-docs**: `ghcr.io/chainguard-dev/ai-docs:latest`
-2. **chainguard-codegen**: `ghcr.io/chainguard-dev/dfc-mcp:latest`
+2. **chainguard-codegen**: `cgr.dev/chainguard/dfc-mcp`
 
 This provides a consistent, dependency-free experience for users.
 
@@ -24,9 +24,9 @@ This provides a consistent, dependency-free experience for users.
        │                         │
        ↓                         ↓
   ┌────────────────┐      ┌──────────────────┐
-  │ ghcr.io/       │      │ ghcr.io/         │
-  │ chainguard-dev/│      │ chainguard-dev/  │
-  │ ai-docs:latest │      │ dfc-mcp:latest   │
+  │ ghcr.io/       │      │ cgr.dev/         │
+  │ chainguard-dev/│      │ chainguard/      │
+  │ ai-docs:latest │      │ dfc-mcp          │
   └────────────────┘      └──────────────────┘
 ```
 
@@ -42,7 +42,7 @@ This workflow:
    - Release events (publishes versioned tags like `:v1.0.0`)
    - Manual dispatch
 2. Builds the container from `mcp-server/Dockerfile`
-3. Pushes to `ghcr.io/chainguard-dev/dfc-mcp`
+3. Pushes to `cgr.dev/chainguard/dfc-mcp`
 4. Signs with cosign
 5. Attaches an SBOM
 6. Supports multi-arch (amd64, arm64)
@@ -109,7 +109,7 @@ The workflow runs when:
         "run",
         "--rm",
         "-i",
-        "ghcr.io/chainguard-dev/dfc-mcp:latest"
+        "cgr.dev/chainguard/dfc-mcp"
       ]
     }
   }
@@ -140,12 +140,12 @@ Both containers include:
 
 ```bash
 # Verify signature
-cosign verify ghcr.io/chainguard-dev/dfc-mcp:latest \
-  --certificate-identity-regexp ".*" \
+cosign verify cgr.dev/chainguard/dfc-mcp \
+  --certificate-identity "https://github.com/chainguard-images/images/.github/workflows/release.yaml@refs/heads/main" \
   --certificate-oidc-issuer https://token.actions.githubusercontent.com
 
 # View SBOM
-cosign download sbom ghcr.io/chainguard-dev/dfc-mcp:latest
+cosign download sbom cgr.dev/chainguard/dfc-mcp
 ```
 
 ## Development Workflow
@@ -187,7 +187,7 @@ For versioned releases:
 
 ```bash
 # Check if you can pull manually
-docker pull ghcr.io/chainguard-dev/dfc-mcp:latest
+docker pull cgr.dev/chainguard/dfc-mcp
 
 # Check GitHub Container Registry status
 # https://www.githubstatus.com/

@@ -89,7 +89,7 @@ Generates secure code configurations using Chainguard Images and the dfc (Docker
 ### Components
 
 **MCP Server**: dfc MCP server
-- Runs via `go run github.com/chainguard-dev/dfc/mcp-server@latest`
+- Runs via `cgr.dev/chainguard/dfc-mcp` Docker container
 - Uses Chainguard's official image and package mappings
 - Performs intelligent Dockerfile conversion
 
