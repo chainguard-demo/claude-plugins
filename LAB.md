@@ -1,6 +1,6 @@
 # Migrate to Chainguard with Claude — Lab Guide
 
-This lab walks through migrating container workloads to Chainguard Images using
+This lab walks through migrating container workloads to Chainguard Containers using
 Claude Code plugins, skills, and Chainguard Academy's AI-optimized documentation.
 
 **Prerequisites:**

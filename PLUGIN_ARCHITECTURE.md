@@ -77,14 +77,14 @@ chainguard-docs/
 
 - `search_docs(query, max_results)` - Full-text search
 - `get_image_docs(image_name)` - Specific image documentation
-- `list_images()` - Available Chainguard Images
+- `list_images()` - Available Chainguard Containers
 - `get_security_docs()` - CVE, SBOM, signing info
 - `get_tool_docs(tool_name)` - Tool documentation (wolfi, apko, melange, chainctl)
 
 ## Plugin 2: chainguard-codegen
 
 ### Purpose
-Generates secure code configurations using Chainguard Images and the dfc (Dockerfile Converter) tool.
+Generates secure code configurations using Chainguard Containers and the dfc (Dockerfile Converter) tool.
 
 ### Components
 
@@ -117,7 +117,7 @@ chainguard-codegen/
 
 #### Dockerfile Migration Flow
 
-1. User: "Migrate this Dockerfile to use Chainguard Images"
+1. User: "Migrate this Dockerfile to use Chainguard Containers"
 2. Claude Code:
    - Activates `dockerfile-migrator` skill (provides context/guidance)
    - Calls dfc MCP `convert_dockerfile` tool with Dockerfile content
@@ -131,7 +131,7 @@ chainguard-codegen/
    - Activates `dockerfile-generator` skill
    - Generates Dockerfile following skill instructions:
      - Multi-stage build
-     - Chainguard Images
+     - Chainguard Containers
      - Non-root user
      - Security best practices
 
@@ -204,7 +204,7 @@ Claude Code automatically:
 Natural language requests:
 ```
 "Generate a Dockerfile for a Django application"
-"Migrate this Dockerfile to use Chainguard Images"
+"Migrate this Dockerfile to use Chainguard Containers"
 "Create an apko config for a custom Python image"
 ```
 

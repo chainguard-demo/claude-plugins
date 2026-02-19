@@ -5,7 +5,7 @@ Access Chainguard's complete documentation library directly within Claude Code t
 ## Features
 
 - **Search Documentation**: Find relevant content across all Chainguard docs
-- **Container Images**: Get detailed information about specific Chainguard Images
+- **Container Images**: Get detailed information about specific Chainguard Containers
 - **Security Guides**: Access CVE management, SBOM, and signing documentation
 - **Tool References**: Learn about Wolfi, apko, melange, and chainctl
 - **Real-time Updates**: Documentation is automatically updated weekly

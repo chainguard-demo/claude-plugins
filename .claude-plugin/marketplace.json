@@ -14,7 +14,7 @@
     {
       "name": "chainguard-codegen",
       "source": "./chainguard-codegen",
-      "description": "Generate secure Dockerfiles, apko/melange configs, and migrate to Chainguard Images"
+      "description": "Generate secure Dockerfiles, apko/melange configs, and migrate to Chainguard Containers"
     }
   ]
 }

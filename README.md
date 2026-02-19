@@ -23,10 +23,10 @@ Access Chainguard's complete documentation library through a Model Context Proto
 
 ### [chainguard-codegen](./chainguard-codegen)
 
-Generate secure code and configurations using Chainguard Images and tools.
+Generate secure code and configurations using Chainguard Containers and tools.
 
 **Features:**
-- Generate secure Dockerfiles with Chainguard Images
+- Generate secure Dockerfiles with Chainguard Containers
 - Migrate existing Dockerfiles to Chainguard
 - Create apko/melange configurations
 - Apply security best practices automatically
@@ -81,8 +81,8 @@ Once installed, try these example prompts:
 ### Using chainguard-codegen
 
 ```
-"Generate a Dockerfile for a Python Flask app using Chainguard Images"
-"Migrate this Dockerfile to use Chainguard Images"
+"Generate a Dockerfile for a Python Flask app using Chainguard Containers"
+"Migrate this Dockerfile to use Chainguard Containers"
 "Create an apko config for a Node.js application"
 "Generate a secure multi-stage Dockerfile for Go"
 ```
@@ -110,13 +110,13 @@ This plugin wraps Chainguard's MCP server (`ghcr.io/chainguard-dev/ai-docs:lates
 
 This plugin includes specialized AI skills that help Claude Code:
 - Generate secure Dockerfiles following best practices
-- Migrate legacy Dockerfiles to Chainguard Images
+- Migrate legacy Dockerfiles to Chainguard Containers
 - Create apko configurations for custom Wolfi images
 - Apply security defaults and multi-stage builds
 
-## What are Chainguard Images?
+## What are Chainguard Containers?
 
-Chainguard Images are secure, minimal container images designed for production use:
+Chainguard Containers are secure, minimal container images designed for production use:
 
 - **Zero CVEs**: No known vulnerabilities, regularly updated
 - **Minimal**: Only includes what's necessary, reducing attack surface
@@ -167,7 +167,7 @@ CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
 ### Example 3: Migrating Existing Code
 
 ```
-You: Can you migrate this Dockerfile to use Chainguard Images?
+You: Can you migrate this Dockerfile to use Chainguard Containers?
 
 FROM python:3.12-slim
 WORKDIR /app
@@ -184,7 +184,7 @@ I'll migrate this to use Chainguard's Python image with a multi-stage build for 
 ## Documentation
 
 - [Chainguard Academy](https://edu.chainguard.dev) - Tutorials and guides
-- [Chainguard Images](https://images.chainguard.dev) - Full image catalog
+- [Chainguard Containers](https://images.chainguard.dev) - Full image catalog
 - [Claude Code Plugins](https://code.claude.com/docs/en/plugins) - Plugin documentation
 
 ## Support
@@ -210,7 +210,7 @@ Apache-2.0
 
 Chainguard is building a new generation of secure software supply chain tooling. We provide:
 
-- **Chainguard Images**: Secure, minimal container images
+- **Chainguard Containers**: Secure, minimal container images
 - **Wolfi**: Undistro for building containers
 - **apko**: Build OCI images from APK packages
 - **melange**: Build APK packages from source

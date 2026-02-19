@@ -1,11 +1,11 @@
 # Chainguard Code Generation Plugin
 
-Generate secure Dockerfiles, apko/melange configurations, and migrate existing projects to use Chainguard Images.
+Generate secure Dockerfiles, apko/melange configurations, and migrate existing projects to use Chainguard Containers.
 
 ## Features
 
-- **Dockerfile Generation**: Create secure, minimal Dockerfiles using Chainguard Images
-- **Dockerfile Migration**: Convert existing Dockerfiles to use Chainguard Images with the [dfc](https://github.com/chainguard-dev/dfc) (Dockerfile Converter) MCP server
+- **Dockerfile Generation**: Create secure, minimal Dockerfiles using Chainguard Containers
+- **Dockerfile Migration**: Convert existing Dockerfiles to use Chainguard Containers with the [dfc](https://github.com/chainguard-dev/dfc) (Dockerfile Converter) MCP server
 - **apko Configurations**: Generate apko YAML files for custom Wolfi-based images
 - **Best Practices**: Automatic application of security and container best practices
 - **Multi-stage Builds**: Proper separation of build and runtime environments
@@ -42,10 +42,10 @@ The dfc MCP server container will be automatically pulled from GitHub Container 
 
 ### 1. Dockerfile Generation
 
-Ask Claude Code to generate Dockerfiles with Chainguard Images:
+Ask Claude Code to generate Dockerfiles with Chainguard Containers:
 
 ```
-"Generate a Dockerfile for a Python Flask app using Chainguard Images"
+"Generate a Dockerfile for a Python Flask app using Chainguard Containers"
 "Create a multi-stage Dockerfile for a Node.js application"
 "Generate a Dockerfile for a Go service that produces a static binary"
 ```
@@ -59,12 +59,12 @@ The plugin will:
 
 ### 2. Dockerfile Migration
 
-Migrate existing Dockerfiles to Chainguard Images:
+Migrate existing Dockerfiles to Chainguard Containers:
 
 ```
-"Migrate this Dockerfile to use Chainguard Images"
+"Migrate this Dockerfile to use Chainguard Containers"
 "Convert my python:3.12-slim Dockerfile to Chainguard"
-"Help me switch from Alpine to Chainguard Images"
+"Help me switch from Alpine to Chainguard Containers"
 ```
 
 The plugin will:
@@ -107,7 +107,7 @@ The plugin will:
 - Set proper entrypoint and environment
 - Keep the image minimal and secure
 
-## Chainguard Images Reference
+## Chainguard Containers Reference
 
 ### Common Images
 
@@ -218,7 +218,7 @@ cp -r chainguard-codegen/skills/mapping-os-packages-to-chainguard ~/.claude/skil
 
 ## Resources
 
-- [Chainguard Images](https://images.chainguard.dev) - Full image catalog
+- [Chainguard Containers](https://images.chainguard.dev) - Full image catalog
 - [apko Documentation](https://edu.chainguard.dev/open-source/apko/)
 - [Wolfi Documentation](https://edu.chainguard.dev/open-source/wolfi/)
 - [Dockerfile Best Practices](https://edu.chainguard.dev/chainguard/chainguard-images/getting-started/)

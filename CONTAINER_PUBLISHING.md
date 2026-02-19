@@ -250,5 +250,5 @@ Potential improvements:
 
 - [GitHub Container Registry Docs](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
 - [Cosign Documentation](https://docs.sigstore.dev/cosign/overview/)
-- [Chainguard Images](https://images.chainguard.dev/)
+- [Chainguard Containers](https://images.chainguard.dev/)
 - [MCP Protocol](https://modelcontextprotocol.io/)
