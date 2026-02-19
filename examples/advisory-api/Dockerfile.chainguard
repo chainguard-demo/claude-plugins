@@ -1,0 +1,23 @@
+# Build stage: install dependencies into an isolated directory
+FROM cgr.dev/chainguard/python:3.11-dev AS builder
+
+USER root
+RUN pip install --no-cache-dir --target=/deps \
+    flask==3.0.0 \
+    gunicorn==21.2.0 \
+    requests==2.31.0 \
+    redis==5.0.0
+
+# Runtime stage: minimal distroless image, no shell required
+FROM cgr.dev/chainguard/python:3.11
+
+COPY --from=builder --chown=65532:65532 /deps /deps
+COPY --chown=65532:65532 app /app
+
+ENV PYTHONPATH=/deps
+
+WORKDIR /app
+EXPOSE 9090
+
+# Chainguard Python image entrypoint is `python`, so CMD args are passed directly to it
+CMD ["-m", "gunicorn", "--bind", "0.0.0.0:9090", "main:app"]

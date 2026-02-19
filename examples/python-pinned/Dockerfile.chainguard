@@ -1,0 +1,15 @@
+FROM cgr.dev/chainguard/python:latest-dev@sha256:4266f833dc9460c954d4ccdb99781c44949296d6339cf58788df6efc8299b433
+
+WORKDIR /app
+
+COPY requirements.txt .
+
+USER root
+RUN pip install --no-cache-dir -r requirements.txt
+USER 65532
+
+COPY . .
+
+EXPOSE 8000
+
+ENTRYPOINT ["python", "app.py"]
