@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "chainguard-docs": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "ghcr.io/chainguard-dev/ai-docs:latest",
+        "serve-mcp"
+      ]
+    }
+  }
+}

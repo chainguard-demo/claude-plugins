@@ -1,0 +1,24 @@
+{
+  "name": "chainguard-docs",
+  "description": "Access Chainguard documentation including container images, security guides, Wolfi, apko, melange, and SBOMs through an MCP server. Search docs, get image information, and learn about supply chain security.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Chainguard",
+    "email": "support@chainguard.dev",
+    "url": "https://chainguard.dev"
+  },
+  "homepage": "https://edu.chainguard.dev",
+  "repository": "https://github.com/chainguard-dev/edu",
+  "license": "Apache-2.0",
+  "keywords": [
+    "chainguard",
+    "documentation",
+    "security",
+    "containers",
+    "wolfi",
+    "apko",
+    "melange",
+    "sbom",
+    "supply-chain"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "dfc": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "cgr.dev/chainguard/dfc-mcp"
+      ],
+      "description": "Dockerfile Converter MCP Server - converts Dockerfiles to use Chainguard Images with intelligent package and base image mapping"
+    }
+  }
+}

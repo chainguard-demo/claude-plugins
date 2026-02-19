@@ -1,0 +1,20 @@
+{
+  "name": "chainguard-plugins",
+  "owner": {
+    "name": "Chainguard",
+    "url": "https://chainguard.dev"
+  },
+  "description": "Official Chainguard plugins for Claude Code - documentation access and secure code generation",
+  "plugins": [
+    {
+      "name": "chainguard-docs",
+      "source": "./chainguard-docs",
+      "description": "Access Chainguard documentation, container images, and security guides through MCP"
+    },
+    {
+      "name": "chainguard-codegen",
+      "source": "./chainguard-codegen",
+      "description": "Generate secure Dockerfiles, apko/melange configs, and migrate to Chainguard Images"
+    }
+  ]
+}
