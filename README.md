@@ -43,7 +43,7 @@ Generate secure code and configurations using Chainguard Containers and tools.
 ### Add the Chainguard Marketplace
 
 ```bash
-/plugin marketplace add github.com/chainguard-demo/claude-plugins
+/plugin marketplace add https://github.com/chainguard-demo/claude-plugins.git
 ```
 
 ### Install Both Plugins
