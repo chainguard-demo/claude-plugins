@@ -188,17 +188,11 @@ work-dir: /app
 
 ## Skills Included
 
-### Plugin Skills (automatically active when plugin is installed)
+All skills are automatically active when the plugin is installed.
 
 - **dockerfile-generator**: Expert at creating secure Dockerfiles
 - **dockerfile-migrator**: Migrates existing Dockerfiles to Chainguard
 - **apko-generator**: Creates apko configurations for Wolfi images
-
-### Standalone Skills (install separately for deeper migration guidance)
-
-The `skills/` directory includes three additional skills in standard SKILL.md
-format, designed for use with the `migrating-dockerfiles-to-chainguard` workflow:
-
 - **migrating-dockerfiles-to-chainguard**: Step-by-step guidance for the full
   migration process — clarifying requirements, converting FROM statements,
   handling packages, users, entrypoints, and troubleshooting
@@ -207,14 +201,6 @@ format, designed for use with the `migrating-dockerfiles-to-chainguard` workflow
   variants, and digest handling
 - **mapping-os-packages-to-chainguard**: Maps OS package names across Alpine,
   Debian, and Fedora ecosystems to their Chainguard/Wolfi equivalents
-
-To install the standalone skills:
-
-```bash
-cp -r chainguard-codegen/skills/migrating-dockerfiles-to-chainguard ~/.claude/skills/
-cp -r chainguard-codegen/skills/mapping-container-images-to-chainguard ~/.claude/skills/
-cp -r chainguard-codegen/skills/mapping-os-packages-to-chainguard ~/.claude/skills/
-```
 
 ## Resources
 

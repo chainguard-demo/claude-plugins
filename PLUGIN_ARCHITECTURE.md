@@ -94,9 +94,12 @@ Generates secure code configurations using Chainguard Containers and the dfc (Do
 - Performs intelligent Dockerfile conversion
 
 **AI Skills**:
-- `dockerfile-generator.json` - Guides Dockerfile creation
-- `dockerfile-migrator.json` - Guides Dockerfile migration (uses dfc MCP)
-- `apko-generator.json` - Guides apko config creation
+- `dockerfile-generator` - Guides Dockerfile creation
+- `dockerfile-migrator` - Guides Dockerfile migration (uses dfc MCP)
+- `apko-generator` - Guides apko config creation
+- `migrating-dockerfiles-to-chainguard` - Full migration workflow
+- `mapping-container-images-to-chainguard` - Image reference mapping
+- `mapping-os-packages-to-chainguard` - OS package name mapping
 
 **Files**:
 ```
@@ -105,12 +108,13 @@ chainguard-codegen/
 │   └── plugin.json          # Plugin metadata
 ├── .mcp.json                # dfc MCP server configuration
 ├── README.md                # User documentation
-├── agents/                  # (empty - ready for future agents)
-├── commands/                # (empty - ready for slash commands)
 └── skills/
-    ├── dockerfile-generator.json
-    ├── dockerfile-migrator.json
-    └── apko-generator.json
+    ├── dockerfile-generator/SKILL.md
+    ├── dockerfile-migrator/SKILL.md
+    ├── apko-generator/SKILL.md
+    ├── migrating-dockerfiles-to-chainguard/SKILL.md
+    ├── mapping-container-images-to-chainguard/SKILL.md
+    └── mapping-os-packages-to-chainguard/SKILL.md
 ```
 
 ### How It Works
