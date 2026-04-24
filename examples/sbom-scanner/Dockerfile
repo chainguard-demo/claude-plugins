@@ -1,4 +1,5 @@
-FROM golang:1.22-alpine AS builder
+# Build stage: compile a static binary using the Chainguard Go image.
+FROM cgr.dev/chainguard/go:latest-dev AS builder
 
 WORKDIR /app
 
@@ -7,12 +8,13 @@ RUN go mod download
 
 COPY . .
 
+# CGO_ENABLED=0 is required for a cgr.dev/chainguard/static runtime — no libc.
 RUN CGO_ENABLED=0 GOOS=linux go build -o sbom-scanner .
 
-FROM scratch
+# Runtime stage: distroless static image, runs as nonroot (UID 65532) by default.
+FROM cgr.dev/chainguard/static:latest
 
-COPY --from=builder /app/sbom-scanner /sbom-scanner
-COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
+COPY --from=builder --chown=65532:65532 /app/sbom-scanner /sbom-scanner
 
 EXPOSE 8080
 

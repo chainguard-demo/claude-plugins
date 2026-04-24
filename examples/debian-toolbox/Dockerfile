@@ -1,15 +1,12 @@
-FROM debian:bookworm-slim
+FROM cgr.dev/chainguard/wolfi-base:latest
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl \
-    wget \
-    ca-certificates \
-    && rm -rf /var/lib/apt/lists/*
+USER root
+RUN apk add --no-cache curl wget ca-certificates
 
 WORKDIR /app
-
-COPY . .
-
+COPY --chown=65532:65532 . .
 RUN chmod +x entrypoint.sh
+
+USER 65532
 
 ENTRYPOINT ["./entrypoint.sh"]
