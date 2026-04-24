@@ -1,5 +1,7 @@
 # Chainguard Claude Code Plugins - Architecture
 
+> **Note:** These are internal design notes, not user documentation. They capture rationale, diagrams, and future-enhancement lists for contributors working on the plugins themselves. Users looking to install or use the plugins should start with the [README](../README.md).
+
 This document explains the architecture and design of the Chainguard plugins for Claude Code.
 
 ## Overview
