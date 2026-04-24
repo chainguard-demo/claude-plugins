@@ -29,7 +29,7 @@ The Chainguard plugin marketplace consists of two complementary plugins:
     ┌────────────────────────┐    ┌────────────────────────┐
     │ Chainguard AI Docs     │    │ dfc MCP Server         │
     │ MCP Server             │    │                        │
-    │ (Docker container)     │    │ (go run)               │
+    │ (Docker container)     │    │ (Docker container)     │
     │                        │    │                        │
     │ Tools:                 │    │ Tools:                 │
     │ - search_docs          │    │ - convert_dockerfile   │
@@ -236,8 +236,8 @@ Both plugins are designed for future expansion:
 - Internet access (to pull ghcr.io/chainguard-dev/ai-docs)
 
 ### chainguard-codegen
-- Go 1.20+ (to run dfc MCP server via `go run`)
-- Internet access (to download dfc MCP server)
+- Docker (to run dfc MCP server container)
+- Internet access (to pull cgr.dev/chainguard/dfc-mcp)
 
 Alternative: Users can build and configure local paths for both MCP servers.
 
