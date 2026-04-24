@@ -214,6 +214,5 @@ Chainguard is building a new generation of secure software supply chain tooling.
 - **Wolfi**: Undistro for building containers
 - **apko**: Build OCI images from APK packages
 - **melange**: Build APK packages from source
-- **Chainguard Enforce**: Software supply chain security platform
 
 Learn more at [chainguard.dev](https://chainguard.dev)

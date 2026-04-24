@@ -1,6 +1,6 @@
 {
   "name": "chainguard-codegen",
-  "description": "Generate secure Dockerfiles, apko/melange configurations, and migrate existing projects to use Chainguard Containers. Includes tools for creating SBOMs, signing images, and implementing supply chain security best practices.",
+  "description": "Generate secure Dockerfiles, generate apko configurations, and migrate existing Dockerfiles to use Chainguard Containers.",
   "version": "0.1.0",
   "author": {
     "name": "Chainguard",

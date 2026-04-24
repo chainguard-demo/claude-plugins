@@ -220,7 +220,6 @@ Both plugins are designed for future expansion:
 
 ### chainguard-docs
 - Additional MCP tools as documentation grows
-- Integration with Chainguard Enforce API
 - Real-time CVE lookup
 
 ### chainguard-codegen
@@ -313,7 +312,6 @@ cd chainguard-claude-plugins
 3. **Additional Skills**
    - melange package building
    - chainctl command generation
-   - Chainguard Enforce configuration
 
 4. **Enhanced MCP Integration**
    - Direct Chainguard API access
