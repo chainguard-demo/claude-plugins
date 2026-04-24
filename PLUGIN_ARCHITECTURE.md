@@ -29,6 +29,8 @@ The Chainguard plugin marketplace consists of two complementary plugins:
     ┌────────────────────────┐    ┌────────────────────────┐
     │ Chainguard AI Docs     │    │ dfc MCP Server         │
     │ MCP Server             │    │                        │
+    │ ghcr.io/chainguard-dev │    │ cgr.dev/chainguard     │
+    │   /ai-docs             │    │   /dfc-mcp             │
     │ (Docker container)     │    │ (Docker container)     │
     │                        │    │                        │
     │ Tools:                 │    │ Tools:                 │
