@@ -28,7 +28,7 @@ This plugin includes:
 Users can install this plugin by adding the Chainguard marketplace:
 
 ```bash
-/plugin marketplace add https://github.com/chainguard-demo/claude-plugins
+/plugin marketplace add https://github.com/chainguard-demo/claude-plugins.git
 /plugin install chainguard-codegen@chainguard-plugins
 ```
 

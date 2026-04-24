@@ -186,7 +186,7 @@ This combination allows Claude to:
 
 ```bash
 # Add marketplace
-/plugin marketplace add github.com/chainguard-demo/claude-plugins
+/plugin marketplace add https://github.com/chainguard-demo/claude-plugins.git
 
 # Install both plugins
 /plugin install chainguard-docs@chainguard-plugins
@@ -285,7 +285,7 @@ cd chainguard-claude-plugins
 
 ### Community Marketplace (Current)
 1. Push to GitHub: `github.com/chainguard-demo/claude-plugins`
-2. Users add: `/plugin marketplace add github.com/chainguard-demo/claude-plugins`
+2. Users add: `/plugin marketplace add https://github.com/chainguard-demo/claude-plugins.git`
 3. Full control over updates and versioning
 
 ### Official Directory (Future)
