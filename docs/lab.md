@@ -1,5 +1,7 @@
 # Migrate to Chainguard with Claude — Lab Guide
 
+> **Note:** This is a workshop/demo script, not reference documentation. It is intended to be followed in order during a live session and includes narration cues ("Here's something most people don't realise", "Demo steps:", etc.). For product documentation, see [Chainguard Academy](https://edu.chainguard.dev/).
+
 This lab walks through migrating container workloads to Chainguard Containers using
 Claude Code plugins, skills, and Chainguard Academy's AI-optimized documentation.
 
