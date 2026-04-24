@@ -14,7 +14,7 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o sbom-scanner .
 # Runtime stage: distroless static image, runs as nonroot (UID 65532) by default.
 FROM cgr.dev/chainguard/static:latest
 
-COPY --from=builder /app/sbom-scanner /sbom-scanner
+COPY --from=builder --chown=65532:65532 /app/sbom-scanner /sbom-scanner
 
 EXPOSE 8080
 

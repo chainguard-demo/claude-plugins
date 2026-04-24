@@ -26,7 +26,8 @@ docker build -f examples/advisory-api/Dockerfile        examples/advisory-api/
 
 - **advisory-api** — Flask + gunicorn service returning a list of sample CVE
   advisories. Shows a multi-stage Python migration using `--target=/deps` for a
-  clean runtime image.
+  clean runtime image. Note: `cmd.sh` is consumed by `Dockerfile.before` only;
+  the Chainguard version invokes gunicorn directly via its `ENTRYPOINT`.
 - **debian-toolbox** — minimal toolbox image with `curl`, `wget`, and
   `ca-certificates`. Shows `debian:bookworm-slim` → `cgr.dev/chainguard/wolfi-base`,
   `apt-get` → `apk`, and Busybox-style `addgroup`/`adduser`.

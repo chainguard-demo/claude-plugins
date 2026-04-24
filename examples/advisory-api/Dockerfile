@@ -19,5 +19,6 @@ ENV PYTHONPATH=/deps
 WORKDIR /app
 EXPOSE 9090
 
-# Chainguard Python image entrypoint is `python`, so CMD args are passed directly to it
-CMD ["-m", "gunicorn", "--bind", "0.0.0.0:9090", "main:app"]
+# Invoke gunicorn directly from /deps/bin so the runtime doesn't rely on
+# `python -m gunicorn` indirection. Overrides the base image's python entrypoint.
+ENTRYPOINT ["/deps/bin/gunicorn", "--bind", "0.0.0.0:9090", "main:app"]
