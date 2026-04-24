@@ -15,7 +15,7 @@ Access Chainguard's complete documentation library directly within Claude Code t
 Users can install this plugin by adding the Chainguard marketplace:
 
 ```bash
-/plugin marketplace add github.com/chainguard-demo/claude-plugins
+/plugin marketplace add https://github.com/chainguard-demo/claude-plugins.git
 /plugin install chainguard-docs@chainguard-plugins
 ```
 
