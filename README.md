@@ -94,7 +94,8 @@ Once installed, try these example prompts:
 - Internet connection
 
 ### chainguard-codegen
-- No additional requirements
+- Docker installed and running (for MCP server)
+- Internet connection
 
 ## Plugin Architecture
 
